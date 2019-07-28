@@ -1,0 +1,114 @@
+{
+    "Medical" : [
+        {
+            "question": "what is your name>",
+            "qno": "g1",
+            "ans": ""
+        },
+        {
+            "question": "what is your father's name?",
+            "qno": "g2",
+            "ans": ""
+        },
+        {
+            "question": "what is your mother's name?",
+            "qno": "g3",
+            "ans": ""
+        },
+        {
+            "question": "what is your brother's name?",
+            "qno": "g4",
+            "ans": ""
+        }
+    ],
+    "General" : [
+        {
+            "question": "what is your blood group?",
+            "qno": "g1",
+            "ans": "",
+            "anstype": "0",
+            "subques" : true
+            
+        },
+        {
+            "question": "what is your weight?",
+            "qno": "g2",
+            "ans": "",
+            "anstype": "1",
+            "subquestion": {
+                
+            "question": "HIV?",
+            "qno": "gs1",
+            "ans": "",
+            "anstype": "1"
+            },
+            "yesquestion" :[
+                 {
+                
+                "question": "yes wuestion ?",
+                "qno": "yq1",
+                "ans": "",
+                "anstype": "1"
+                },
+                 {
+                
+                "question": "yes question 2 ?",
+                "qno": "yq2",
+                "ans": "",
+                "anstype": "1"
+                }
+            ],
+            "noquestion" :[
+                 {
+                
+                "question": "no wuestion ?",
+                "qno": "nq1",
+                "ans": "",
+                "anstype": "1"
+                },
+                 {
+                
+                "question": "no question 2 ?",
+                "qno": "nq2",
+                "ans": "",
+                "anstype": "1"
+                }
+            ]
+
+        },
+        {
+            "question": "what is your height?",
+            "qno": "g3",
+            "ans": "",
+            "anstype": "2"
+        },
+        {
+            "question": "what is your skin color?",
+            "qno": "g4",
+            "ans": "",
+            "anstype": "3"
+        }
+    ],
+    "Personal" : [
+        {
+            "question": "what is your Salary ?>",
+            "qno": "p1",
+            "ans": ""
+        },
+        {
+            "question": "what is your village's name?",
+            "qno": "p2",
+            "ans": ""
+        },
+        {
+            "question": "what is your sister's name?",
+            "qno": "p3",
+            "ans": ""
+        },
+        {
+            "question": "what is your son's name?",
+            "qno": "p4",
+            "ans": ""
+        }
+    ]
+}

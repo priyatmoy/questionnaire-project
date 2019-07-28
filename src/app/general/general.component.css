@@ -1,0 +1,22 @@
+.question-div {
+    padding:10px;
+    border: solid lightgray;
+    border-radius:4px;
+    width:100%
+}
+.question-div .question-span {
+    width:40%;
+    padding-right:30px;
+    display: inline-block;
+    word-wrap: break-word;
+}
+.answer-span {
+    width:35%;
+    display: inline-block;
+    padding-right: 30px;
+}
+.option-span {
+    width:15%;
+    display: inline-block;
+    padding-right:10px;
+}

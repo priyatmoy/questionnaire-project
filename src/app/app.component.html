@@ -1,0 +1,38 @@
+<div class= "main-div">
+<div class= "search-div form-group ">
+      <label for = "caseid">Case Id:</label>
+      <input class = "search-box" id= "caseId" name = "caseId" placeholder="Enter Case ID">
+      <button class = "btn btn-primary">search</button>
+</div>
+
+
+
+<div class = "outer-frame">
+    <ul class="nav nav-tabs">
+        <li [ngClass]="GeneralTab"(click) = "generalTabClicked()"><a data-toggle="tab" href="#home">General</a></li>
+        <li [ngClass]="medicalTab"(click) = "medicalTabClicked()"><a data-toggle="tab" href="#menu1">Medical</a></li>
+        <li [ngClass]="PersonalTab"(click) = "personalTabClicked()"><a data-toggle="tab" href="#menu2">Personal</a></li>
+        <li [ngClass]="SummaryTab"(click) = "summaryTabClicked()"><a data-toggle="tab" href="#menu3">Summary</a></li>
+      </ul>
+    
+      <div class="tab-content">
+        <div id="home" class="tab-pane fade" [ngClass]="GeneralTabContent">
+        <app-general *ngIf = "generalData" [userData]=generalData ></app-general>  
+        </div>
+        <div id="menu1" class="tab-pane fade"  [ngClass]="medicalTabContent">
+        <app-medical *ngIf = "medicalData" [userData]=medicalData></app-medical>  
+        </div>
+        <div id="menu2" class="tab-pane fade"  [ngClass]="personalTabContent">
+        
+        <app-personal *ngIf = "personalData" [userData]=personalData ></app-personal>
+        </div>
+        <div id="menu3" class="tab-pane fade"  [ngClass]="SummaryTabContent">
+        <app-summary></app-summary> 
+        </div>
+      </div>
+</div>
+  <div class= "navigation-btn">
+    <button (click) ="prevClick()" [style.display] = "hidePrevbtn" class = "btn btn-primary prev-btn">Prev</button>
+    <button (click) ="nextClick()" class = "btn btn-primary next-btn">Next</button>
+  </div>
+</div>
